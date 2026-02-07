@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    deployToK8s("noura/my-app:${env.BRANCH_NAME}", "k8s/deployment.yaml", "k8s-token", "k8s-api")
+                    deployToK8s("noura/my-app:${env.BRANCH_NAME}", "deployment.yaml", "k8s-token", "k8s-api")
                 }
             }
         }
