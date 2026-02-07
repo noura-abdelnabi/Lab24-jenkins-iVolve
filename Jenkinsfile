@@ -1,4 +1,4 @@
-@Library('SahredLibrary-NTI') _ 
+@Library('SharedLibrary-NTI') _ 
 
 pipeline {
     agent { label 'shared-lib' } 
