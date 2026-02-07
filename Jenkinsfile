@@ -1,7 +1,7 @@
-@Library('SharedLibrary-NTI') _ 
+@Library('shared-lib') _ 
 
 pipeline {
-    agent { label 'shared-lib' } 
+    agent { label 'linux-agent' } 
 
     stages {
         stage('Build') {
